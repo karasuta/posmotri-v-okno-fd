@@ -12,7 +12,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto; 
+  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -50,6 +50,7 @@ ol {
 /**** ОКНО РЕЗУЛЬТАТА ****/
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 20px;
@@ -62,9 +63,6 @@ ol {
   object-position: center;
 }
 
-.result__video-container {
-  position: relative;
-}
 /**** ФОРМА  ПОИСКА ****/
 .search-form {
   display: flex;
@@ -250,12 +248,13 @@ ol {
   white-space: nowrap;
 }
 
-.content__video-card-description{
+.content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
   line-height: 26px;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
